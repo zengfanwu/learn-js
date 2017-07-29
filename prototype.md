@@ -2,7 +2,7 @@
 ****
 原型链继承
 `SubType.prototype = new SuperType()`   
-创建`SuperType`的实例并将该实例赋给`SubType.prototype`实现的。实现的本质是重写原型对象，代之以一个新类型的示例。存在于`SuperType`的实例中的所有属性和方法都将存在于`SubType.prototype`中。由于此时`SubType`的原型指向了`SuperType`的原型，所以`SubType`的`constructor`属性指向`SupeType`。   
+创建`SuperType`的实例并将该实例赋给`SubType.prototype`实现的。实现的本质是重写原型对象，代之以一个新类型的示例。存在于`SuperType`的实例中的所有属性和方法都将存在于`SubType.prototype`中。由于此时`SubType`的原型指向了`SuperType`的原型，所以`SubType`的`constructor`属性指向`SuperType`。   
 注意：通过原型链继承时不能使用对象字面量创建原型方法，因为这样会重写原型链。  
 缺点：     
 1、没有办法在不影响所有对象实例的情况下，给超类型的构造函数传递参数。     
